@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div class="welcome survey" id="page1">
+		<form id ="tool-form">
+			<h1>Age</h1>
+			<h2>Please mark your age category</h2>
+			<!-- age range -->
+			<div class="form-group" id="test">
+				<label for="age">Select your age range:</label>
+				<select class="form-control" id="age">
+			    	<option>0-19 Years</option>
+			    	<option>19-64 Years</option>
+			    	<option>65+ Years</option>
+			  </select>
+			</div>
+			<!-- 0-19 -->
+			<div class="form-group">
+				<label for="chip">Are you (or the person for whom you are looking for insurance) 18 or under?</label>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" name="inlineRadioYesNo" id="yes" value="yes">
+					<label class="form-check-label" for="yes">Yes</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" name="inlineRadioYesNo" id="no" value="no">
+					<label class="form-check-label" for="no">No</label>
+				</div>
+			</div>
+			<!-- citizen -->
+			<div class="form-group">
+				<label for="chip">Is this individual a US Citizen or legal resident?</label>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" name="inlineRadioYesNo-citizen" id="yes-citizen" value="yes">
+					<label class="form-check-label" for="yes-citizen">Yes</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" name="inlineRadioYesNo-citizen" id="no-citizen" value="no">
+					<label class="form-check-label" for="no-citizen">No</label>
+				</div>
+			</div>
+			<!-- Children’s No-Cost and Premium Medi-Cal Services -->
+			<div class="form-group">
+				<label for="chip">Is this individual an inmate of a public institution, a patient in an institution for mental disease, or eligible for state health benefit plans?</label>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" name="inlineRadioYesNo-eligiblechip" id="yes-eligiblechip" value="yes">
+					<label class="form-check-label" for="yes-eligiblechip">Yes</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" name="inlineRadioYesNo-eligiblechip" id="no-eligiblechip" value="no">
+					<label class="form-check-label" for="no-eligiblechip">No</label>
+				</div>
+			</div>
+			<button id="nextButton" type="button">Next</button>
+			<!-- 19-64 -->
+			<!-- 65+ -->
+			<!-- if current carosuel is the last one where you actually start the survey slide, then we repurpose the buttons to display and show the diffrernt pages of the tool -->
+		</form>
+	</div>
+
+	<div class="welcome survey" id="page2">
+		<form id ="tool-form">
+			<!-- 0-19 -->
+			<!-- 19-64 -->
+			<!-- 65+ -->
+		</form>
+	</div>
+   	
+</body>
+</html>
